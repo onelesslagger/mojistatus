@@ -1,0 +1,11 @@
+Package: com.onelesslagger.mojistatus
+Name: MojiStatus
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Customize statusbar text with emojis or custom text!
+Maintainer: OneLessLagger
+Author: OneLessLagger
+Section: Tweaks
+Depiction: https://username.github.io/repo/depictions/?p=com.onelesslagger.mojistatus
+
