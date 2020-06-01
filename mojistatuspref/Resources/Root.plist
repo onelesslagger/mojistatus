@@ -4,6 +4,27 @@
 <dict>
 	<key>items</key>
 	<array>
+	<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>headerCellClass</key>
+			<string>HBPackageNameHeaderCell</string>
+			<key>packageIdentifier</key>
+			<string>com.onelesslagger.mojistatus</string>
+			<key>backgroundGradientColors</key>
+			<array>
+				<string>#0089E1</string>
+				<string>#0044DD</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Enable Tweak</string>
+			<key>footerText</key>
+			<string>Tweak will come enabled. Please adjust your settings as needed.</string>
+		</dict>
 			<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
@@ -12,7 +33,7 @@
 			<key>defaults</key>
 			<string>com.onelesslagger.mojistatuspref</string>
 			<key>label</key>
-			<string>Enable EmojiBar</string>
+			<string>Enable MojiStatus</string>
 			<key>key</key>
 			<string>isEnabled</string>
 		</dict>	
@@ -23,19 +44,31 @@
 			<key>label</key>
 			<string>Settings</string>
 			<key>footerText</key>
-			<string>After changing the text, lock the phone to update the status bar.</string>
+			<string>Respring to save changes. </string>	
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
+			<string>PSSegmentCell</string>
 			<key>default</key>
-			<true/>
+			<integer>0</integer>
 			<key>defaults</key>
 			<string>com.onelesslagger.mojistatuspref</string>
-			<key>label</key>
-			<string>Include Current Time</string>
 			<key>key</key>
-			<string>includeTime</string>
+			<string>tweakView</string>
+			<key>validTitles</key>
+			<array>
+				<string>Custom Text + Stock</string>
+				<string>Custom Text + Time</string>
+				<string>Custom Text Only</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.onelesslagger.mojistatuspref./preferences.changed</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -54,6 +87,48 @@
 			<string>customTextValue</string>
 			<key>PostNotification</key>
 			<string>com.onelesslagger.mojistatuspref./preferences.changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Extra Goodies</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.onelesslagger.mojistatuspref</string>
+			<key>label</key>
+			<string>Hide Status Bar</string>
+			<key>key</key>
+			<string>hideStatusBar</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>respringMethod</string>
+			<key>label</key>
+			<string>Respring</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credits</string>
+		</dict>
+
+		<dict>
+		    <key>cellClass</key>
+		    <string>HBTwitterCell</string>
+		    <key>label</key>
+		    <string>Ali Samdaan Ali (OneLessLagger)</string>
+		    <key>user</key>
+		    <string>therealali11</string>
 		</dict>
 	</array>
 	<key>title</key>

@@ -6,6 +6,7 @@ mojistatuspref_FILES = mspRootListController.m
 mojistatuspref_INSTALL_PATH = /Library/PreferenceBundles
 mojistatuspref_FRAMEWORKS = UIKit
 mojistatuspref_PRIVATE_FRAMEWORKS = Preferences
+mojistatuspref_EXTRA_FRAMEWORKS = Cephei CepheiPrefs
 mojistatuspref_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/bundle.mk
